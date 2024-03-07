@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@ body {
     height: 650px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100%);
+    background-size: max(2000px, 100%);
     position: relative;
 }
 
@@ -65,7 +65,8 @@ body {
     border: 1px solid rgb(248, 0, 0);
     font-size: 25px;
 }
-.body{
+
+.body {
     color: rgb(255, 255, 255);
     gap: 10px;
     height: calc(100% - 100px);
@@ -75,25 +76,30 @@ body {
     justify-content: center;
 
 }
-.body .body1{
+
+.body .body1 {
     font-weight: bold;
     font: 50px sans-serif;
 }
-.body .body2{
+
+.body .body2 {
     font-weight: bold;
     font: 30px sans-serif;
 }
-.body .body3{
+
+.body .body3 {
     font-weight: bold;
     font: 30px sans-serif;
 }
-.body-button{
+
+.body-button {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.body-button input{
+
+.body-button input {
     font-weight: 500;
     padding-left: 10px;
     padding-top: 9px;
@@ -105,7 +111,8 @@ body {
     border: 1px solid white;
     cursor: pointer;
 }
-.body-button button{
+
+.body-button button {
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -117,10 +124,12 @@ body {
     border-radius: 4px;
     font-weight: 600;
 }
-.line{
+
+.line {
     background-color: grey;
     height: 3px;
 }
+
 .first {
     display: flex;
     justify-content: center;
@@ -130,6 +139,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .secImg {
     position: relative;
 }
@@ -162,6 +172,7 @@ section.first>div :nth-child(1) {
 section.first>div :nth-child(2) {
     font-size: 24px;
 }
+
 .faq h2 {
     text-align: center;
     font-size: 48px;
@@ -211,10 +222,11 @@ footer .questions {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
-/* media quaery */
-@media screen and (max-width: 1300px) {
 
-    nav{
+/* media quaery */
+@media screen and (max-width: 1400px) {
+
+    nav .top {
         max-width: 90vw;
     }
 
@@ -230,7 +242,7 @@ footer .questions {
         width: 305px;
     }
 
-    .body  .body1 {
+    .body .body1 {
         font-size: 32px;
     }
 
@@ -242,13 +254,7 @@ footer .questions {
         font-size: 18px;
     }
 
-    .body-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
+
 
     .faq h2 {
         text-align: center;
@@ -260,16 +266,15 @@ footer .questions {
         padding: 75px 0;
     }
 
-    .footer-item{
+    .footer-item {
         align-items: center;
     }
- 
+
+
 
 }
 
-
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
 
     .footer {
         display: grid;
@@ -288,4 +293,144 @@ footer .questions {
     display: flex;
     flex-direction: column;
     gap: 23px;
+}
+
+@media screen and (max-width:900px) {
+    .top {
+        max-width: 100vw;
+
+    }
+
+    .top span img {
+        width: 100px;
+
+    }
+
+    .top div button {
+        margin: 5px;
+        position: relative;
+    }
+
+    .btn1 {
+
+        padding: 0 5px;
+        font-size: 17px;
+    }
+
+    .btn2 {
+        padding: 0 5px;
+        font-size: 17px;
+    }
+
+    .body-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .body-button input {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+
+    }
+
+    .body-button button {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .top {
+        max-width: 100vw;
+
+    }
+
+    .top span img {
+        width: 70px;
+
+    }
+
+    .top div button {
+        margin: 2px;
+        position: relative;
+    }
+
+    .btn1 {
+
+        padding: 0 5px;
+        font-size: 17px;
+    }
+
+    .btn2 {
+        padding: 0 5px;
+        font-size: 17px;
+    }
+
+    .body-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .body-button input {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+
+    }
+
+    .body-button button {
+        font-size: 14px;
+    }
+
+
+    .body .body1 {
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .body .body2 {
+        font-size: 15px;
+    }
+
+    .body .body3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+
+    section.first>div :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .faq {
+        background: black;
+        color: white;
+        padding: 34px;
+    }
+
+    .faqbox {
+        font-size: 15px;
+    }
 }
