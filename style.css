@@ -1,0 +1,291 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    background-image: url(Assets/Images/Background\ Image.jpg);
+    height: 650px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100%);
+    position: relative;
+}
+
+.background {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 650px;
+    position: relative;
+    background-size: max(1200px, 100%);
+}
+
+.top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 67vw;
+    margin: auto;
+}
+
+.top span img {
+    width: 130px;
+    position: relative;
+    margin: 0 40px;
+}
+
+.top div button {
+    margin: 15px;
+    position: relative;
+}
+
+.btn1 {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 400;
+    color: white;
+    padding: 0 34px;
+    border: 1px solid white;
+    font-size: 25px;
+}
+
+.btn2 {
+    border-radius: 4px;
+    background-color: rgb(255, 0, 0);
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 0 34px;
+    border: 1px solid rgb(248, 0, 0);
+    font-size: 25px;
+}
+.body{
+    color: rgb(255, 255, 255);
+    gap: 10px;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.body .body1{
+    font-weight: bold;
+    font: 50px sans-serif;
+}
+.body .body2{
+    font-weight: bold;
+    font: 30px sans-serif;
+}
+.body .body3{
+    font-weight: bold;
+    font: 30px sans-serif;
+}
+.body-button{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 20px;
+}
+.body-button input{
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 50px;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.body-button button{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.line{
+    background-color: grey;
+    height: 3px;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+/* media quaery */
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .body  .body1 {
+        font-size: 32px;
+    }
+
+    .body .body2 {
+        font-size: 18px;
+    }
+
+    .body .body3 {
+        font-size: 18px;
+    }
+
+    .body-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
